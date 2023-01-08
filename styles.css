@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-image: url(./assets/macOS\ Monterey\ wallpaper.jpg);
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip__calculator {
+  border-radius: 24px;
+  width: 85%;
+  max-width: 1000px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__left {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 24px 0 0 24px;
+}
+
+.container__right {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 24px 24px 0;
+}
+
+.input__side,
+.result__side {
+  padding: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bill,
+.tip,
+.result {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tip,
+.result:last-child {
+  margin: 0;
+}
+
+.bill__label,
+.tip__label,
+.result__label {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.bill__field,
+.tip__field,
+.result__num {
+  font-size: 24px;
+}
+
+.result__num {
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  padding: 8px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/*
+
+RESPNOSIVENESS
+
+*/
+@media(max-width: 478px) {
+  .tip__calculator {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container__left {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .container__right {
+    border-radius: 0 0 24px 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
