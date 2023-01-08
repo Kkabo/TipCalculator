@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Git" />
+    <meta name="description" content="Tip Calculator" />
+    <meta name="author" content="Dardan Kabashi" />
+    <meta http-equiv="refresh" content="600" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+      name="viewport"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tip Calculator</title>
+    <link rel="shortcut icon" type="x-icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="tip__calculator">
+      <div class="container container__left">
+        <form id="form" action="GET" class="input__side">
+          <div class="bill">
+            <label for="" class="bill__label">Bill</label>
+            <input id="bill" type="number" class="bill__field" />
+          </div>
+          <div class="tip">
+            <label for="" class="tip__label">Tip %</label>
+            <input id="tip__percentage" type="number" class="tip__field" />
+          </div>
+        </form>
+      </div>
+      <div class="container container__right">
+        <div class="result__side">
+          <div class="result">
+            <span class="result__label">Tip</span>
+            <span id="tip__amount" class="result__num">0.00</span>
+          </div>
+          <div class="result">
+            <span class="result__label">Total</span>
+            <span id="total__amount" class="result__num">0.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
